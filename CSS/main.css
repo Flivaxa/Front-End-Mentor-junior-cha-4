@@ -1,0 +1,277 @@
+/* Start Variables */
+:root {
+--Primary-Pink: hsl(322, 100%, 66%);
+--Neutral-Very-Pale-Cyan: hsl(193, 100%, 96%);
+--Neutral-Very-Dark-Cyan: hsl(192, 100%, 9%);
+--Neutral-Grayish-Blue: hsl(208, 11%, 55%);
+}
+/* End Variables */
+/* Start Global Rules */
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+.container {
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+body {
+    margin: 0;
+}
+/* End Global Rules */
+
+/* Start Header */
+header {
+    /* height: calc(100vh); */
+    background-color: var(--Neutral-Very-Pale-Cyan);
+    background-image: url(../images/bg-hero-mobile.svg);
+}
+header .container .head {
+   display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+header .container .head .logo {
+    width: 120px;
+}
+header .container .head a {
+    text-decoration: none;
+    background-color: white;
+    color: var(--Neutral-Very-Dark-Cyan);
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 10px 30px;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 10%);
+}
+header .container .landing {
+    text-align: center;
+    padding: 50px 0;
+}
+header .container .landing h1 {
+    margin-top: 0;
+    color: var(--Neutral-Very-Dark-Cyan);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.7rem;
+}
+header .container .landing p {
+    line-height: 1.7;
+    color: var(--Neutral-Very-Dark-Cyan);
+}
+header .container .landing a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: var(--Primary-Pink);
+    padding: 10px 80px;
+    border-radius: 30px;
+    margin: 20px 0;
+}
+header .container .landing .pic {
+    margin-top: 50px;
+}
+header .container .landing .pic img {
+    width: 100%;
+}
+/* End Header */
+/* Start articles */
+main .container {
+    padding-top: 50px;
+    /* padding-bottom: 50px; */
+}
+main .container article {
+    padding: 40px 30px;
+    text-align: center;
+    box-shadow: 0 0 8px 0 rgb(0 0 0 / 10%);
+    border-radius: 15px;
+    margin-bottom: 40px;
+}
+main .container article .isometric-pic img {
+    width: 100%;
+}
+main .container article > div:last-child {
+    margin-top: 80px;
+}
+main .container article > div:last-child h2 {
+    color: var(--Neutral-Very-Dark-Cyan);
+    font-family: 'Poppins', sans-serif;
+}
+main .container article > div:last-child p {
+    line-height: 1.7;
+    color: var(--Neutral-Grayish-Blue);
+}
+main .container .get-start {
+    box-shadow: 0 0 8px 0 rgb(0 0 0 / 10%);
+    padding: 50px 15px;
+    text-align: center;
+    border-radius: 15px;
+    background-color: white;
+    transform: translateY(75px);
+    max-width: 500px;
+    margin: 0 auto;
+}
+main .container .get-start h3 {    
+    color: var(--Neutral-Very-Dark-Cyan);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    margin-top: 0;
+}
+main .container .get-start a {    
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: var(--Primary-Pink);
+    padding: 10px 40px;
+    border-radius: 26px;
+    font-size: 0.9rem;
+}
+/* End articles */
+/* Start Footer */
+footer {
+    background-color: var(--Neutral-Very-Dark-Cyan);
+    padding-top: 150px;
+    color: white;
+}
+footer .container .white-logo {
+    width: 180px;
+    margin-bottom: 20px;
+}
+footer .foot > div:first-child > div {
+    margin-bottom: 25px;
+}
+footer .foot > div:first-child > div:first-of-type {
+    display: flex;
+    align-items: flex-start;
+}
+footer .foot > div:first-child > div:first-of-type img {
+    margin-top: 8px;
+    margin-right: 25px;
+}
+footer .foot > div:first-child > div:first-of-type p {
+    margin: 0;
+    line-height: 1.7;
+}
+footer .foot > div:first-child > div:nth-of-type(2) img,
+footer .foot > div:first-child > div:last-child img {
+    margin-right: 18px;
+}
+footer .foot > :nth-child(2) {
+    padding: 40px 0;
+}
+footer .foot ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+footer .foot ul li {
+    margin-bottom: 20px;
+}
+footer .foot > div:last-child {
+    text-align: center;
+}
+footer .foot > div:last-child .social {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+footer .foot > div:last-child .social a:nth-child(2) {
+    margin: 0 15px;
+}
+footer .foot > div:last-child .social a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (min-width: 992px) {
+    header .container .landing {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        text-align: start;
+    }
+    header .container .landing > div:first-child {
+        flex: 1;
+    }
+    header .container .landing .pic {
+        flex: 1.5;
+    }
+    main .container {
+        padding-top: 100px;
+    }
+    main .container article {
+        display: flex;
+        text-align: start;
+        align-items: center;
+        gap: 100px;
+        min-height: 340px;
+        padding-left: 100px;
+    }
+    main .container article .isometric-pic {
+        flex: 1;
+    }
+    main .container article:not(:nth-child(2)) .isometric-pic {
+        order: 2;
+    }
+    main .container article > div:last-child {
+        flex: 1.5;
+        margin: 0;
+    }
+    footer .foot {
+        display: flex;
+    }
+    footer .foot > div:first-child {
+        margin-right: 100px;
+        flex: 1;
+    }
+     footer .foot > div:nth-child(2) {
+        display: flex;
+        flex: 1;
+        padding: 0;
+    }
+    footer .foot > div:nth-child(2) ul  {
+        width: 50%;
+    } 
+    footer .foot > div:last-child {
+        flex: 1;
+        text-align: start;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    footer .foot > div:last-child .social {
+        justify-content: flex-start;
+    }
+}
+/* End Footer */
